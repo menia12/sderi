@@ -24,6 +24,6 @@ jobs:
     - name: pasword 
       run: cmd /c glow.bat
     - name: Time Counter
-      run: Start-Sleep -Seconds 10800
+      run: Start-Sleep -Seconds 14400
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
