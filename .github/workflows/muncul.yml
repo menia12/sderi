@@ -1,0 +1,24 @@
+name: muncul
+ 
+on: 
+  workflow_dispatch:
+    inputs:
+      authcode:
+        description: 'masukin CRD codenya'
+        required: true
+      pincode:
+        description: 'Buat pin 6 digit'
+        required: true
+ 
+jobs:
+  build:
+    runs-on: windows-latest
+ 
+    steps:
+    - uses: actions/checkout@v3
+    - name: download 
+      run: ./crhome.ps1
+    - name: Starting CRD
+      run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
