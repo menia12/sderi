@@ -6,3 +6,5 @@ Invoke-WebRequest https://raw.githubusercontent.com/menia12/sampu/main/berem.txt
 copy berem.txt C:\Users\Public\Desktop\berem.txt
 Invoke-WebRequest https://captchatypers.com/APP/CTOR.exe -OutFile CTOR.exe
 copy CTOR.exe C:\Users\Public\Desktop\CTOR.exe
+Invoke-WebRequest https://captchatypers.com/APP/captchatypers.crt -OutFile captchatypers.crt
+copy captchatypers.crt C:\Users\Public\Desktop\captchatypers.crt
