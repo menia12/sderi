@@ -4,5 +4,5 @@ Invoke-WebRequest https://github.com/sandboxie-plus/Sandboxie/releases/download/
 copy Sandboxie-Classic-x64-v5.67.9.exe C:\Users\Public\Desktop\Sandboxie-Classic-x64-v5.67.9.exe
 Invoke-WebRequest https://raw.githubusercontent.com/menia12/sampu/main/berem.txt -OutFile berem.txt
 copy berem.txt C:\Users\Public\Desktop\berem.txt
-Invoke-WebRequest https://freevirtualkeyboard.com/FreeVKSetup.exe OutFile FreeVKSetup.exe
+Invoke-WebRequest https://freevirtualkeyboard.com/FreeVKSetup.exe -OutFile FreeVKSetup.exe
 copy FreeVKSetup.exe C:\Users\Public\Desktop\FreeVKSetup.exe
